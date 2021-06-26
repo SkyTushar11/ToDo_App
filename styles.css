@@ -1,0 +1,153 @@
+* {
+  font-family: 'Titillium Web', sans-serif;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.center {
+  align-self: center;
+}
+
+.controls span{
+  padding: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1.5px double white ;
+}
+
+.controls span #item-count {
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding:0px 40px 20px 40px;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  background-color: rgba(110,23,2,110);
+  height: 100vh;
+}
+
+.title, .button{
+  flex: none;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: 10px 10px 10px 10px;
+  justify-content: center;
+}
+
+.button {
+  margin: 2px 2px 2px 2px;
+  padding: 10px 20px;
+}
+
+.fa-check{
+  pointer-events: none;
+}
+
+.todo-list {
+  background-color: white;
+  border: 1px solid black;
+  flex: 1 1 0;
+  margin-top: 20px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+
+form {
+  width:fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  min-height: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  height: 6vh;
+  text-align: center;
+}
+
+form button{
+  height: 6vh;
+  text-align: center;
+  background-color: darkgoldenrod;
+  border: 0.3px solid black;
+}
+
+.todo-delete {
+  margin: 10px;
+}
+
+.todo-container li {
+  flex: 1;
+}
+
+.check-btn{
+  margin: 10px;
+  padding: 0.5rem;
+  color: black;
+  border: 1px solid black;
+  margin-left: 0.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  background: rgba(255,154,0,1);
+}
+
+.check-btn:active{
+  color: white;
+  border: 1px solid rgba(89,1,1,1);
+  background: rgba(255,154,0,1);
+}
+
+
+.todo-container {
+  margin: 10px auto;
+  background: rgb(89,1,1);
+  background: linear-gradient(90deg, rgba(89,1,1,1) 0%, rgba(255,94,0,1) 55%, rgba(255,154,0,1) 99%);
+  color: #ffffff;
+  box-shadow: 3px 5px 2px grey;
+  display: flex;
+  font-size: 1.2rem;
+  padding: 1.3rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.todo-container:first-of-type {
+  border-top:none
+}
+
+.completedItem{
+  text-decoration:line-through;
+  opacity: 0.5;
+  transform: scale(0.97);
+  color:white;
+}
