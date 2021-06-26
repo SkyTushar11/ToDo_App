@@ -101,10 +101,6 @@ form button{
   border: 0.3px solid black;
 }
 
-.todo-delete {
-  margin: 10px;
-}
-
 .todo-container li {
   flex: 1;
 }
